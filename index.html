@@ -18,132 +18,142 @@
 
 </head>
 <body>
-
   <!-- header section -->
-  <header class="header flex space-between align-items-center">
-    <img class="primary-logo" src="images/logo.svg" alt="">
-    <nav>
-      <ul class="primary-nav flex flex-gap fs-300">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Sign In</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container flex align-items-center space-between">
+      <img class="primary-logo" src="images/logo.svg" alt="">
+      <nav>
+        <ul class="primary-nav flex flex-gap fs-300">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
     <!-- hero section -->
-    <section class="hero container">
-
-      <div>
-        <img class="hero__img pb-m" src="images/illustration-1.svg" alt="">
+    <section class="hero">
+      
+      <div class="container flex flex-column-reverse flex-gap align-items-center">
+        <div class="text-align-center">
+          <h1 class="hero__title fs-700 fw-bold pb-s">All your files in one secure location, accessible anywhere.</h1>
+          <p class="pb-m">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+          <form class="cta-form" action="submit">
+            <input type="email" placeholder="Enter your email...">
+            <button class="primary-btn" type="submit">Get Started</button>
+          </form>
+        </div>
+        <div>
+          <img class="hero__img pb-m" src="images/illustration-1.svg" alt="">
+        </div>
       </div>
-      <div class="hero__content text-align-center">
-        <h1 class="hero__title fs-700 fw-bold pb-s">All your files in one secure location, accessible anywhere.</h1>
-        <p class="pb-m">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-      </div>
-      <div class="horizontal-center">
-        <form class="cta-form" action="submit">
-          <input type="email" placeholder="Enter your email...">
-          <button class="primary-btn" type="submit">Get Started</button>
-        </form>
-      </div>
-
+      
     </section>
 
     <!-- testimonials section -->
-    <section class="testimonial container-small flex">
+    <section class="testimonial">
+      <div class="container">
 
-      <div>
-        <img class="testimonial__img" src="images/illustration-2.svg" alt="">
-      </div>
-
-      <div class="flex flex-gap">
-        <h2 class="horizontal-center fs-500">Stay productive, wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-        <div class="testimonial__link flex flex-gap-s horizontal-center">
-          <a class="fs-300" href="#">See how Fylo works</a>
-          <img src="images/icon-arrow.svg" alt="">
+        <div>
+          <img class="testimonial__img" src="images/illustration-2.svg" alt="">
         </div>
-        
-      </div>
-
-      <div class="testimonial-card br-s">
-
-        <img class="pb-s" src="images/icon-quotes.svg" alt="">
-
-        <blockquote class="fs-200 pb-s">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-        </blockquote>
-        
-        <div class="flex flex-gap-s align-items-center">
-          <div>
-            <img class="testimonial-card__avatar" src="images/avatar-testimonial.jpg" alt="">
+  
+        <div class="flex flex-gap">
+          <h2 class="horizontal-center fs-500">Stay productive, wherever you are</h2>
+          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+          <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+          <div class="testimonial__link flex flex-gap-s horizontal-center">
+            <a class="fs-300" href="#">See how Fylo works</a>
+            <img src="images/icon-arrow.svg" alt="">
           </div>
-          <div class="testimonial-card__customer">
-            <p><span>Kyle Burton</span></p>
-            <p>Founder & CEO, Huddle</p>
-          </div>
-
+          
         </div>
-        
+
+        <div class="testimonial-card br-s">
+
+          <img class="pb-s" src="images/icon-quotes.svg" alt="">
+  
+          <p class="fs-200 pb-s">
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          
+          <div class="flex flex-gap-s align-items-center">
+            <div>
+              <img class="testimonial-card__avatar" src="images/avatar-testimonial.jpg" alt="">
+            </div>
+            <div class="testimonial-card__customer">
+              <p><span>Kyle Burton</span></p>
+              <p>Founder & CEO, Huddle</p>
+            </div>
+  
+          </div>
+          
+        </div>
+
       </div>
      
     </section>
 
     <!-- cta section -->
-    <article class="cta container flex flex-column flex-gap">
-      
-      <div class="text-align-center">
-        <h2 class="fs-600 pb-s">Get early access today</h2>
-        <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-      </div>
-      
-      <div class="horizontal-center">
-        <form class="cta-form cta-form--small" action="submit">
-          <input type="email" placeholder="email@example.com">
-          <button class="primary-btn" type="submit">Get Started For Free</button>
-        </form>
-      </div>
+    <article class="cta">
+      <div class="container">
 
+        <div class="text-align-center">
+          <h2 class="fs-600 pb-s">Get early access today</h2>
+          <p class="pb-s">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+        </div>
+        
+        <div class="horizontal-center">
+          <form class="cta-form cta-form--small" action="submit">
+            <input type="email" placeholder="email@example.com">
+            <button class="primary-btn" type="submit">Get Started For Free</button>
+          </form>
+        </div>
+
+      </div>
     </article>
   </main>
 
-  <footer class="container flex flex-column flex-gap">
-    
-    <img class="footer__logo pb-m" src="images/logo.svg" alt="">
-    
-    <ul class="footer__contact">
-      <li class="flex align-items-center flex-gap-s">
-        <img src="images/icon-phone.svg" alt="">
-        <p>Phone: +1-543-123-4567</p>
-      </li>
-      <li class="flex align-items-center flex-gap-s">
-        <img src="images/icon-email.svg" alt="">
-        <a href="mailto:example@fylo.com">example@fylo.com</a>
-      </li>
-    </ul>
-  
-    <ul class="footer__links">
-      <li><a href="">About Us</a></li>
-      <li><a href="">Jobs</a></li>
-      <li><a href="">Press</a></li>
-      <li><a href="">Blog</a></li>
-    </ul>
+  <footer class="footer">
+    <div class="container flex flex-column flex-gap">
 
-    <ul class="footer__links">
-      <li><a href="">Contact Us</a></li>
-      <li><a href="">Terms</a></li>
-      <li><a href="">Privacy</a></li>
-    </ul>
- 
-    <ul class="social__list flex flex-gap-s horizontal-center">
-      <li class="fa-fb"><a href=""></a></li>
-      <li class="fa-tw"><a href=""></a></li>
-      <li class="fa-ig"><a href=""></a></li>
-    </ul>
+      <img class="footer__logo pb-m" src="images/logo.svg" alt="">
+    
+      <ul class="footer__contact">
+        <li class="flex align-items-center flex-gap-s">
+          <img src="images/icon-phone.svg" alt="">
+          <p>Phone: +1-543-123-4567</p>
+        </li>
+        <li class="flex align-items-center flex-gap-s">
+          <img src="images/icon-email.svg" alt="">
+          <a href="mailto:example@fylo.com">example@fylo.com</a>
+        </li>
+      </ul>
+    
+      <ul class="footer__links">
+        <li><a href="">About Us</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Press</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+  
+      <ul class="footer__links">
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Privacy</a></li>
+      </ul>
+   
+      <ul class="social__list flex flex-gap-s horizontal-center">
+        <li class="fa-fb"><a href=""></a></li>
+        <li class="fa-tw"><a href=""></a></li>
+        <li class="fa-ig"><a href=""></a></li>
+      </ul>
+
+    </div>
+    
 
   </footer>
 
